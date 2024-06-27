@@ -8,7 +8,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
 
 // Fetch product details based on ID from query parameter
-document.addEventListener("load", function () {
+window.addEventListener("load", function () {
     function fetchProductDetails(productId) {
         const productsUrl = "https://dummyjson.com/products"; // Replace with your actual API endpoint
         fetch(`${productsUrl}/${productId}`)
