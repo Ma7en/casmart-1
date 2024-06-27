@@ -1,9 +1,9 @@
-#
+#Casmart
 
 -
 
 Main project mazen saad
-JavaScript
+JavaScript - Parcel
 
 ## <!-- upload files to github -->
 
@@ -32,3 +32,11 @@ firebase login
 firebase init
 
 firebase deploy
+
+## <!-- link repo -->
+
+https://github.com/Ma7en/casmart-1
+https://casmart-1.netlify.app
+https://casmart-1.vercel.app/
+
+## <!-- link repo -->
