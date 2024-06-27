@@ -1,0 +1,22 @@
+{
+    "name": "g",
+    "version": "1.0.0",
+    "description": "Guess-My-Number",
+    "source": "src/index.html",
+    "scripts": {
+        "start": "parcel",
+        "build": "parcel build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Mazen Saad",
+    "license": "ISC",
+    "dependencies": {
+        "core-js": "^3.34.0",
+        "ionicons": "^7.4.0",
+        "regenerator-runtime": "^0.14.0",
+        "sass": "^1.69.5"
+    },
+    "devDependencies": {
+        "parcel": "^2.12.0"
+    }
+}

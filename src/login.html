@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Casmart - Login</title>
+
+        <!-- 
+            - favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="./favicon.svg" type="image/x-icon" />
+        <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./favicon.svg" type="image/x-icon" />
+
+        <!-- 
+            - custom css link
+        -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- 
+            - google font link
+        -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        /> -->
+    </head>
+
+    <body>
+        <!-- 
+            - #go-to-top
+        -->
+        <a class="go-to-top" id="go-to-top">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 512 512"
+            >
+                <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="48"
+                    d="m112 328l144-144l144 144"
+                />
+            </svg>
+        </a>
+
+        <!-- 
+            - #HEADER
+        -->
+        <header class="header" data-header>
+            <div class="container">
+                <div class="overlay" data-overlay></div>
+
+                <a href="./index.html" class="logo">
+                    <img
+                        src="./images/logo.svg"
+                        alt="Casmart logo"
+                        width="130"
+                        height="31"
+                    />
+                </a>
+
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <a href="./index.html" class="logo">
+                            <img
+                                src="./images/logo.svg"
+                                alt="Casmart logo"
+                                width="130"
+                                height="31"
+                            />
+                        </a>
+
+                        <button
+                            class="nav-close-btn"
+                            data-nav-close-btn
+                            aria-label="Close Menu"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 512 512"
+                            >
+                                <path
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="32"
+                                    d="M368 368L144 144m224 0L144 368"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="./index.html#home" class="navbar-link"
+                                >Home</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#service" class="navbar-link"
+                                >About</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#product" class="navbar-link"
+                                >Shop</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#blog" class="navbar-link"
+                                >Blog</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#footer" class="navbar-link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="./login.html" class="header-action-btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 512 512"
+                        >
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                                d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96"
+                            />
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-miterlimit="10"
+                                stroke-width="32"
+                                d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304Z"
+                            />
+                        </svg>
+
+                        <p class="header-action-label sign">Sign in</p>
+                    </a>
+
+                    <button class="header-action-btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 512 512"
+                        >
+                            <circle
+                                cx="176"
+                                cy="416"
+                                r="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                            />
+                            <circle
+                                cx="400"
+                                cy="416"
+                                r="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                            />
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                                d="M48 80h64l48 272h256"
+                            />
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                                d="M160 288h249.44a8 8 0 0 0 7.85-6.43l28.8-144a8 8 0 0 0-7.85-9.57H128"
+                            />
+                        </svg>
+
+                        <p class="header-action-label">Cart</p>
+
+                        <div class="btn-badge green" aria-hidden="true">0</div>
+                    </button>
+                </div>
+
+                <button
+                    class="nav-open-btn"
+                    data-nav-open-btn
+                    aria-label="Open Menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- 
+            - #main 
+        -->
+        <main>
+            <section class="login">
+                <div class="container">
+                    <form id="login-form">
+                        <label for="username">Username:</label>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            required
+                        />
+                        <label for="password">Password:</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                        />
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- 
+            - custom js link
+        -->
+        <script src="./js/scroll.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/login.js"></script>
+
+        <!-- 
+            - ionicon link
+        -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Casmart - Biggest shopping center</title>
+
+        <!-- 
+            - favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="./favicon.svg" type="image/x-icon" />
+        <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./favicon.svg" type="image/x-icon" />
+
+        <!-- 
+            - custom css link
+        -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- 
+            - google font link
+        -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        /> -->
+    </head>
+
+    <body>
+        <!-- 
+            - #go-to-top
+        -->
+        <a class="go-to-top" id="go-to-top">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 512 512"
+            >
+                <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="48"
+                    d="m112 328l144-144l144 144"
+                />
+            </svg>
+        </a>
+
+        <!-- 
+            - #HEADER
+        -->
+        <header class="header" data-header>
+            <div class="container">
+                <div class="overlay" data-overlay></div>
+
+                <a href="./index.html" class="logo">
+                    <img
+                        src="./images/logo.svg"
+                        alt="Casmart logo"
+                        width="130"
+                        height="31"
+                    />
+                </a>
+
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <a href="./index.html" class="logo">
+                            <img
+                                src="./images/logo.svg"
+                                alt="Casmart logo"
+                                width="130"
+                                height="31"
+                            />
+                        </a>
+
+                        <button
+                            class="nav-close-btn"
+                            data-nav-close-btn
+                            aria-label="Close Menu"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 512 512"
+                            >
+                                <path
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="32"
+                                    d="M368 368L144 144m224 0L144 368"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#home" class="navbar-link">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#service" class="navbar-link">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#product" class="navbar-link">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="#blog" class="navbar-link">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#footer" class="navbar-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="./login.html" class="header-action-btn sign">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 512 512"
+                        >
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                                d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96"
+                            />
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-miterlimit="10"
+                                stroke-width="32"
+                                d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304Z"
+                            />
+                        </svg>
+
+                        <p class="header-action-label">Sign in</p>
+                    </a>
+
+                    <button class="header-action-btn view">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 512 512"
+                        >
+                            <circle
+                                cx="176"
+                                cy="416"
+                                r="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                            />
+                            <circle
+                                cx="400"
+                                cy="416"
+                                r="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                            />
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                                d="M48 80h64l48 272h256"
+                            />
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                                d="M160 288h249.44a8 8 0 0 0 7.85-6.43l28.8-144a8 8 0 0 0-7.85-9.57H128"
+                            />
+                        </svg>
+
+                        <p class="header-action-label">Cart</p>
+
+                        <div class="btn-badge green" aria-hidden="true">0</div>
+                    </button>
+                </div>
+
+                <button
+                    class="nav-open-btn"
+                    data-nav-open-btn
+                    aria-label="Open Menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <!-- 
+                    - #HERO
+                -->
+                <!-- background-image: url('./images/hero-banner.jpg'); -->
+                <section
+                    class="hero"
+                    id="home"
+                    style="background-image: url('./images/blog-3.jpg')"
+                >
+                    <div class="container">
+                        <div class="hero-content">
+                            <p class="hero-subtitle">Fashion Everyday</p>
+
+                            <h2 class="h1 hero-title">
+                                Unrivalled Fashion House
+                            </h2>
+
+                            <a href="#product" class="btn btn-primary"
+                                >Shop Now</a
+                            >
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 
+                    - #SERVICE
+                -->
+                <section class="service" id="service">
+                    <div class="container">
+                        <ul class="service-list">
+                            <li class="service-item">
+                                <div class="service-item-icon">
+                                    <img
+                                        src="./images/service-icon-1.svg"
+                                        alt="Service icon"
+                                    />
+                                </div>
+
+                                <div class="service-content">
+                                    <p class="service-item-title">
+                                        Free Shipping
+                                    </p>
+
+                                    <p class="service-item-text">
+                                        On All Order Over $599
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="service-item">
+                                <div class="service-item-icon">
+                                    <img
+                                        src="./images/service-icon-2.svg"
+                                        alt="Service icon"
+                                    />
+                                </div>
+
+                                <div class="service-content">
+                                    <p class="service-item-title">
+                                        Easy Returns
+                                    </p>
+
+                                    <p class="service-item-text">
+                                        30 Day Returns Policy
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="service-item">
+                                <div class="service-item-icon">
+                                    <img
+                                        src="./images/service-icon-3.svg"
+                                        alt="Service icon"
+                                    />
+                                </div>
+
+                                <div class="service-content">
+                                    <p class="service-item-title">
+                                        Secure Payment
+                                    </p>
+
+                                    <p class="service-item-text">
+                                        100% Secure Gaurantee
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="service-item">
+                                <div class="service-item-icon">
+                                    <img
+                                        src="./images/service-icon-4.svg"
+                                        alt="Service icon"
+                                    />
+                                </div>
+
+                                <div class="service-content">
+                                    <p class="service-item-title">
+                                        Special Support
+                                    </p>
+
+                                    <p class="service-item-text">
+                                        24/7 Dedicated Support
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 
+                    - #CATEGORY
+                -->
+                <section class="section category">
+                    <div class="container">
+                        <ul class="category-list">
+                            <li class="category-item">
+                                <figure class="category-banner">
+                                    <img
+                                        src="./images/category-1.jpg"
+                                        alt="Sunglass & eye"
+                                        loading="lazy"
+                                        width="510"
+                                        height="600"
+                                        class="w-100"
+                                    />
+                                </figure>
+
+                                <a href="#" class="btn btn-secondary"
+                                    >Sunglass & Eye</a
+                                >
+                            </li>
+
+                            <li class="category-item">
+                                <figure class="category-banner">
+                                    <img
+                                        src="./images/category-2.jpg"
+                                        alt="Active & outdoor"
+                                        loading="lazy"
+                                        width="510"
+                                        height="600"
+                                        class="w-100"
+                                    />
+                                </figure>
+
+                                <a href="#" class="btn btn-secondary"
+                                    >Active & Outdoor</a
+                                >
+                            </li>
+
+                            <li class="category-item">
+                                <figure class="category-banner">
+                                    <img
+                                        src="./images/category-3.jpg"
+                                        alt="Winter wear"
+                                        loading="lazy"
+                                        width="510"
+                                        height="600"
+                                        class="w-100"
+                                    />
+                                </figure>
+
+                                <a href="#" class="btn btn-secondary"
+                                    >Winter Wear</a
+                                >
+                            </li>
+
+                            <li class="category-item">
+                                <figure class="category-banner">
+                                    <img
+                                        src="./images/category-4.jpg"
+                                        alt="Exclusive footwear"
+                                        loading="lazy"
+                                        width="510"
+                                        height="600"
+                                        class="w-100"
+                                    />
+                                </figure>
+
+                                <a href="#" class="btn btn-secondary"
+                                    >Exclusive Footwear</a
+                                >
+                            </li>
+
+                            <li class="category-item">
+                                <figure class="category-banner">
+                                    <img
+                                        src="./images/category-5.jpg"
+                                        alt="Jewelry"
+                                        loading="lazy"
+                                        width="510"
+                                        height="600"
+                                        class="w-100"
+                                    />
+                                </figure>
+
+                                <a href="#" class="btn btn-secondary"
+                                    >Jewelry</a
+                                >
+                            </li>
+
+                            <li class="category-item">
+                                <figure class="category-banner">
+                                    <img
+                                        src="./images/category-6.jpg"
+                                        alt="Sports cap"
+                                        loading="lazy"
+                                        width="510"
+                                        height="600"
+                                        class="w-100"
+                                    />
+                                </figure>
+
+                                <a href="#" class="btn btn-secondary"
+                                    >Sports Cap</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 
+                    - #PRODUCT
+                -->
+                <section class="section product" id="product">
+                    <div class="container">
+                        <h2 class="h2 section-title">Products of the week</h2>
+
+                        <div class="nav-categories">
+                            <button class="pre-btn">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="1em"
+                                    height="1em"
+                                    viewBox="0 0 512 512"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="48"
+                                        d="M328 112L184 256l144 144"
+                                    />
+                                </svg>
+                            </button>
+
+                            <ul class="filter-list" id="categories"></ul>
+
+                            <button class="next-btn">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="1em"
+                                    height="1em"
+                                    viewBox="0 0 512 512"
+                                >
+                                    <path
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="48"
+                                        d="m184 112l144 144l-144 144"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div id="searchDiv"></div>
+
+                        <ul class="product-list" id="product-list"></ul>
+                    </div>
+                </section>
+
+                <!-- 
+                    - #BLOG
+                -->
+                <section class="section blog" id="blog">
+                    <div class="container">
+                        <h2 class="h2 section-title">Latest fashion news</h2>
+
+                        <ul class="blog-list">
+                            <li>
+                                <div class="blog-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/blog-1.jpg"
+                                                alt="Worthy Cyber Monday Fashion From Casmart"
+                                                loading="lazy"
+                                                width="1020"
+                                                height="700"
+                                                class="w-100"
+                                            />
+                                        </a>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <ul class="card-meta-list">
+                                            <li class="card-meta-item">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="1em"
+                                                    height="1em"
+                                                    viewBox="0 0 512 512"
+                                                >
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M64 192v-72a40 40 0 0 1 40-40h75.89a40 40 0 0 1 22.19 6.72l27.84 18.56a40 40 0 0 0 22.19 6.72H408a40 40 0 0 1 40 40v40"
+                                                    />
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M479.9 226.55L463.68 392a40 40 0 0 1-39.93 40H88.25a40 40 0 0 1-39.93-40L32.1 226.55A32 32 0 0 1 64 192h384.1a32 32 0 0 1 31.8 34.55"
+                                                    />
+                                                </svg>
+
+                                                <a
+                                                    href="#"
+                                                    class="card-meta-link"
+                                                    >Fashion</a
+                                                >
+                                            </li>
+
+                                            <li class="card-meta-item">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="1em"
+                                                    height="1em"
+                                                    viewBox="0 0 512 512"
+                                                >
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-miterlimit="10"
+                                                        stroke-width="32"
+                                                        d="M256 64C150 64 64 150 64 256s86 192 192 192s192-86 192-192S362 64 256 64Z"
+                                                    />
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M256 128v144h96"
+                                                    />
+                                                </svg>
+
+                                                <a
+                                                    href="#"
+                                                    class="card-meta-link"
+                                                >
+                                                    <time datetime="2021-03-31"
+                                                        >31 Mar 2021</time
+                                                    >
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <h3 class="h3 card-title">
+                                            <a href="#"
+                                                >Worthy Cyber Monday Fashion
+                                                From Casmart</a
+                                            >
+                                        </h3>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="blog-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/blog-2.jpg"
+                                                alt="Holiday Home Decoration I’ve Recently Ordered"
+                                                loading="lazy"
+                                                width="1020"
+                                                height="700"
+                                                class="w-100"
+                                            />
+                                        </a>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <ul class="card-meta-list">
+                                            <li class="card-meta-item">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="1em"
+                                                    height="1em"
+                                                    viewBox="0 0 512 512"
+                                                >
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M64 192v-72a40 40 0 0 1 40-40h75.89a40 40 0 0 1 22.19 6.72l27.84 18.56a40 40 0 0 0 22.19 6.72H408a40 40 0 0 1 40 40v40"
+                                                    />
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M479.9 226.55L463.68 392a40 40 0 0 1-39.93 40H88.25a40 40 0 0 1-39.93-40L32.1 226.55A32 32 0 0 1 64 192h384.1a32 32 0 0 1 31.8 34.55"
+                                                    />
+                                                </svg>
+
+                                                <a
+                                                    href="#"
+                                                    class="card-meta-link"
+                                                    >Fashion</a
+                                                >
+                                            </li>
+
+                                            <li class="card-meta-item">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="1em"
+                                                    height="1em"
+                                                    viewBox="0 0 512 512"
+                                                >
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-miterlimit="10"
+                                                        stroke-width="32"
+                                                        d="M256 64C150 64 64 150 64 256s86 192 192 192s192-86 192-192S362 64 256 64Z"
+                                                    />
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M256 128v144h96"
+                                                    />
+                                                </svg>
+
+                                                <a
+                                                    href="#"
+                                                    class="card-meta-link"
+                                                >
+                                                    <time datetime="2021-03-31"
+                                                        >31 Mar 2021</time
+                                                    >
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <h3 class="h3 card-title">
+                                            <a href="#"
+                                                >Holiday Home Decoration I’ve
+                                                Recently Ordered</a
+                                            >
+                                        </h3>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="blog-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/blog-3.jpg"
+                                                alt="Unique Ideas for Fashion You Haven’t heard yet"
+                                                loading="lazy"
+                                                width="1020"
+                                                height="700"
+                                                class="w-100"
+                                            />
+                                        </a>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <ul class="card-meta-list">
+                                            <li class="card-meta-item">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="1em"
+                                                    height="1em"
+                                                    viewBox="0 0 512 512"
+                                                >
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M64 192v-72a40 40 0 0 1 40-40h75.89a40 40 0 0 1 22.19 6.72l27.84 18.56a40 40 0 0 0 22.19 6.72H408a40 40 0 0 1 40 40v40"
+                                                    />
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M479.9 226.55L463.68 392a40 40 0 0 1-39.93 40H88.25a40 40 0 0 1-39.93-40L32.1 226.55A32 32 0 0 1 64 192h384.1a32 32 0 0 1 31.8 34.55"
+                                                    />
+                                                </svg>
+
+                                                <a
+                                                    href="#"
+                                                    class="card-meta-link"
+                                                    >Fashion</a
+                                                >
+                                            </li>
+
+                                            <li class="card-meta-item">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="1em"
+                                                    height="1em"
+                                                    viewBox="0 0 512 512"
+                                                >
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-miterlimit="10"
+                                                        stroke-width="32"
+                                                        d="M256 64C150 64 64 150 64 256s86 192 192 192s192-86 192-192S362 64 256 64Z"
+                                                    />
+                                                    <path
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M256 128v144h96"
+                                                    />
+                                                </svg>
+
+                                                <a
+                                                    href="#"
+                                                    class="card-meta-link"
+                                                >
+                                                    <time datetime="2021-03-31"
+                                                        >31 Mar 2021</time
+                                                    >
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <h3 class="h3 card-title">
+                                            <a href="#"
+                                                >Unique Ideas for Fashion You
+                                                Haven’t heard yet</a
+                                            >
+                                        </h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 
+                    - #NEWSLETTER
+                -->
+                <section class="section newsletter">
+                    <div class="container">
+                        <div
+                            class="newsletter-card"
+                            style="
+                                background-image: url('./images/newsletter-bg.png');
+                            "
+                        >
+                            <h2 class="card-title">Subscribe Newsletter</h2>
+
+                            <p class="card-text">
+                                Enter your email below to be the first to know
+                                about new collections and product launches.
+                            </p>
+
+                            <form action="" class="card-form">
+                                <div class="input-wrapper">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <rect
+                                            width="416"
+                                            height="320"
+                                            x="48"
+                                            y="96"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="32"
+                                            rx="40"
+                                            ry="40"
+                                        />
+                                        <path
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="32"
+                                            d="m112 160l144 112l144-112"
+                                        />
+                                    </svg>
+
+                                    <input
+                                        type="email"
+                                        name="emal"
+                                        placeholder="Enter your email"
+                                        required
+                                        class="input-field"
+                                    />
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary w-100"
+                                >
+                                    <span>Subscribe</span>
+
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="48"
+                                            d="m268 112l144 144l-144 144m124-144H100"
+                                        />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- 
+            - #model cart
+        -->
+        <div class="model-cart">
+            <div class="container">
+                <div class="title">
+                    <h2>list-product</h2>
+                    <button
+                        class="model-close-btn"
+                        data-nav-close-btn=""
+                        aria-label="Close Menu"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 512 512"
+                        >
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="32"
+                                d="M368 368L144 144m224 0L144 368"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="list-products" id="list-products">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Aut ipsum exercitationem impedit nisi. Alias
+                        labore quibusdam quidem adipisci porro cumque tempora
+                        deleniti magnam, corporis, sapiente deserunt expedita
+                        eos earum. A, vitae voluptas accusantium dolores eaque
+                        sit est dolor sapiente in repellat illo doloremque
+                        minima, eum libero animi illum blanditiis qui?
+                    </p>
+                </div>
+
+                <div id="total">ddd</div>
+            </div>
+        </div>
+
+        <!-- 
+            - #FOOTER
+        -->
+        <footer class="footer" id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">
+                            <img src="./images/logo.svg" alt="Casmart logo" />
+                        </a>
+
+                        <p class="footer-text">
+                            Casmart is a fashion theme for presents a complete
+                            wardrobe of uniquely crafted Ethnic Wear, Casuals,
+                            Edgy Denims, & Accessories inspired from the most
+                            contemporary
+                        </p>
+
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            fill-rule="evenodd"
+                                            d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16c24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M496 109.5a201.8 201.8 0 0 1-56.55 15.3a97.5 97.5 0 0 0 43.33-53.6a197.7 197.7 0 0 1-62.56 23.5A99.14 99.14 0 0 0 348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.2 93.2 0 0 0 2.54 22.1a280.7 280.7 0 0 1-203-101.3A95.7 95.7 0 0 0 36 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0 1 35.22 199v1.2c0 47 34 86.1 79 95a100.8 100.8 0 0 1-25.94 3.4a94.4 94.4 0 0 1-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.6 199.6 0 0 1 39.5 405.6a203 203 0 0 1-23.5-1.4A278.7 278.7 0 0 0 166.74 448c181.36 0 280.44-147.7 280.44-275.8c0-4.2-.11-8.4-.31-12.5A198.5 198.5 0 0 0 496 109.5"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34zm0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32"
+                                        />
+                                        <path
+                                            fill="currentColor"
+                                            d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28M256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <path
+                                            fill="currentColor"
+                                            d="M256.05 32c-123.7 0-224 100.3-224 224c0 91.7 55.2 170.5 134.1 205.2c-.6-15.6-.1-34.4 3.9-51.4c4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58c20.4 0 30.2 15.3 30.2 33.6c0 20.5-13.1 51.1-19.8 79.5c-5.6 23.8 11.9 43.1 35.4 43.1c42.4 0 71-54.5 71-119.1c0-49.1-33.1-85.8-93.2-85.8c-67.9 0-110.3 50.7-110.3 107.3c0 19.5 5.8 33.3 14.8 43.9c4.1 4.9 4.7 6.9 3.2 12.5c-1.1 4.1-3.5 14-4.6 18c-1.5 5.7-6.1 7.7-11.2 5.6c-31.3-12.8-45.9-47-45.9-85.6c0-63.6 53.7-139.9 160.1-139.9c85.5 0 141.8 61.9 141.8 128.3c0 87.9-48.9 153.5-120.9 153.5c-24.2 0-46.9-13.1-54.7-27.9c0 0-13 51.6-15.8 61.6c-4.7 17.3-14 34.5-22.5 48a225.1 225.1 0 0 0 63.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Information</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">About Company</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Payment Type</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Awards Winning</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"
+                                >World Media Partner</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Become an Agent</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Refund Policy</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Help & Support</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Dealers & Agents</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">FAQ Information</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Return Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"
+                                >Shipping & Delivery</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Order Tranking</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">List of Shops</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="copyright">
+                        &copy; <span class="data-year">2022</span>
+                        <a href="#">Mazen Saad</a>. All Rights Reserved
+                    </p>
+
+                    <ul class="footer-bottom-list">
+                        <li>
+                            <a href="#" class="footer-bottom-link"
+                                >Privacy Policy</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-bottom-link"
+                                >Terms & Conditions</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-bottom-link">Sitemap</a>
+                        </li>
+                    </ul>
+
+                    <div class="payment">
+                        <p class="payment-title">We Support</p>
+
+                        <img
+                            src="./images/payment-img.png"
+                            alt="Online payment logos"
+                            class="payment-img"
+                        />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 
+            - custom js link
+        -->
+        <script src="./js/header.js"></script>
+        <script src="./js/footer.js"></script>
+        <script src="./js/cart.js"></script>
+        <script src="./js/scroll.js"></script>
+        <script src="./js/main.js"></script>
+
+        <!-- 
+            - ionicon link
+        -->
+        <!-- <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script> -->
+    </body>
+</html>

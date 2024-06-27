@@ -1,0 +1,10 @@
+# folder
+.parcel-cache
+dist
+node_modules
+notes
+.DS_Store
+
+# file
+README--.md
+

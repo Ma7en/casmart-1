@@ -1,0 +1,1347 @@
+        
+        
+        
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+index.html
+
+
+
+ <ul class="filter-list" id="categories">
+                                <!-- <li>
+                                <button class="filter-btn active">
+                                    Best Seller
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="filter-btn">
+                                    Hot Collection
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="filter-btn">Trendy</button>
+                            </li>
+
+                            <li>
+                                <button class="filter-btn">New Arrival</button>
+                            </li> -->
+                            </ul>
+
+
+
+
+<ul class="product-list" id="product-list">
+                            <!-- 
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-1.jpg"
+                                                alt="Varsi Leather Bag"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-badge red">-25%</div>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#">Varsi Leather Bag</a>
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="48.75"
+                                                >&pound;48.75</data
+                                            >
+
+                                            <data value="65.00"
+                                                >&pound;65.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-2.jpg"
+                                                alt="Fit Twill Shirt for Woman"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-badge green">New</div>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#"
+                                                >Fit Twill Shirt for Woman</a
+                                            >
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="62.00"
+                                                >&pound;62.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-3.jpg"
+                                                alt="Grand Atlantic Chukka Boots"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#"
+                                                >Grand Atlantic Chukka Boots</a
+                                            >
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="32.00"
+                                                >&pound;32.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-4.jpg"
+                                                alt="Women's Faux-Trim Shirt"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#"
+                                                >Women's Faux-Trim Shirt</a
+                                            >
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="84.00"
+                                                >&pound;84.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-5.jpg"
+                                                alt="Soft Touch Interlock Polo"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#"
+                                                >Soft Touch Interlock Polo</a
+                                            >
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="45.00"
+                                                >&pound;45.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-6.jpg"
+                                                alt="Casmart Smart Watch"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#">Casmart Smart Watch</a>
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="30.00"
+                                                >&pound;30.00</data
+                                            >
+
+                                            <data value="38.00"
+                                                >&pound;38.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-7.jpg"
+                                                alt="Casmart Smart Glass"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#">Casmart Smart Glass</a>
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="25.00"
+                                                >&pound;25.00</data
+                                            >
+
+                                            <data value="39.00"
+                                                >&pound;39.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-8.jpg"
+                                                alt="Cotton Shirt for Men"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#">Cotton Shirt for Men</a>
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="85.00"
+                                                >&pound;85.00</data
+                                            >
+
+                                            <data value="99.00"
+                                                >&pound;99.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-9.jpg"
+                                                alt="Double-breasted Blazer"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#"
+                                                >Double-breasted Blazer</a
+                                            >
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="32.00"
+                                                >&pound;32.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-card">
+                                    <figure class="card-banner">
+                                        <a href="#">
+                                            <img
+                                                src="./images/product-10.jpg"
+                                                alt="Ribbed Cotton Bodysuits"
+                                                loading="lazy"
+                                                width="800"
+                                                height="1034"
+                                                class="w-100"
+                                            />
+                                        </a>
+
+                                        <div class="card-badge green">New</div>
+
+                                        <div class="card-actions">
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Quick view"
+                                            >
+                                                <ion-icon
+                                                    name="eye-outline"
+                                                ></ion-icon>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn cart-btn"
+                                            >
+                                                <ion-icon
+                                                    name="bag-handle-outline"
+                                                    aria-hidden="true"
+                                                ></ion-icon>
+
+                                                <p>Add to Cart</p>
+                                            </button>
+
+                                            <button
+                                                class="card-action-btn"
+                                                aria-label="Add to Whishlist"
+                                            >
+                                                <ion-icon
+                                                    name="heart-outline"
+                                                ></ion-icon>
+                                            </button>
+                                        </div>
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <h3 class="h4 card-title">
+                                            <a href="#"
+                                                >Ribbed Cotton Bodysuits</a
+                                            >
+                                        </h3>
+
+                                        <div class="card-price">
+                                            <data value="71.00"
+                                                >&pound;71.00</data
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+
+
+
+
+
+                    <!-- <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Category</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"
+                                >Handbags & Wallets</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Women's Clothing</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Plus Sizes</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"
+                                >Complete Your Look</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Baby Corner</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Man & Woman Shoe</a>
+                        </li>
+                    </ul> -->
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+// =================================================================================================
+// =================================================================================================
+// =================================================================================================
+
+        <!-- <div class="header-search">
+                    <input
+                        type="search"
+                        name="search"
+                        placeholder="Search Product..."
+                        class="input-field"
+                    />
+
+                    <button class="search-btn" aria-label="Search">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                </div> -->
+
+
+
+
+.header-search {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    
+    .header-search {
+        display: block;
+        position: relative;
+        width: max-content;
+    }
+
+    .header-search .input-field {
+        border: 1px solid hsla(0, 0%, 0%, 0.1);
+        width: 280px;
+        padding: 12px 30px;
+        border-radius: 6px;
+        transition: var(--transition-1);
+    }
+
+    .header-search .input-field:focus {
+        outline: 1px solid var(--eerie-black);
+    }
+
+    .header-search .search-btn {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: var(--eerie-black);
+    }
+
+    .header-search .search-btn ion-icon {
+        --ionicon-stroke-width: 30px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+        .header-search .input-field {
+        width: 350px;
+    }
+
+}
+
+
+======================================
+
+
+
+
+
+
+
+
+                    <!-- <button class="header-action-btn">
+                        <ion-icon
+                            name="search-outline"
+                            aria-hidden="true"
+                        ></ion-icon>
+
+                        <p class="header-action-label">Search</p>
+                    </button> -->
+
+
+
+
+
+
+
+
+
+
+            // productContainer.innerHTML += `
+            //     <div class="product">
+            //         <img src="${product.images[0]}" alt="${product.title}">
+            //         <h2>${product.title}</h2>
+            //         <p>${product.description}</p>
+            //         <p>${product.price}</p>
+            //         <button onclick="addToCart(${product.id})">Add to Cart</button>
+            //     </div>
+            // `;
+
+
+
+
+
+
+
+
+/*
+availabilityStatus: "In Stock"
+
+category: "groceries"
+
+description: "Refreshing fruit juice, packed with vitamins and great for staying hydrated."
+
+dimensions: {width: 8.97, height: 12.26, depth: 15.05}
+
+discountPercentage: 5.45
+
+id: 29
+
+images: ['https://cdn.dummyjson.com/products/images/groceries/Juice/1.png']
+
+meta: {createdAt: '2024-05-23T08:56:21.620Z', updatedAt: '2024-05-23T08:56:21.620Z', barcode: '8546824122355', qrCode: 'https://cdn.dummyjson.com/public/qr-code.png'}
+
+minimumOrderQuantity: 26
+
+price: 3.99
+
+rating: 3.41
+
+returnPolicy: "90 days return policy"
+reviews: (3) [{
+comment
+: 
+"Very satisfied!"
+date
+: 
+"2024-05-23T08:56:21.620Z"
+rating
+: 
+4
+reviewerEmail
+: 
+"leo.rivera@x.dummyjson.com"
+reviewerName
+: 
+"Leo Rivera"
+}, {…}, {…}]
+
+shippingInformation: "Ships in 1-2 business days"
+
+sku: "M2K19S06"
+
+stock: 99
+
+tags: ['beverages']
+
+thumbnail: "https://cdn.dummyjson.com/products/images/groceries/Juice/thumbnail.png"
+
+title: "Juice"
+warrantyInformation: "1 week warranty"
+weight: 2
+*/
+
+/*
+
+description: "Refreshing fruit juice, packed with vitamins and great for staying hydrated."
+
+id: 29
+
+images: ['https://cdn.dummyjson.com/products/images/groceries/Juice/1.png']
+
+
+price: 3.99
+
+rating: 3.41
+
+returnPolicy: "90 days return policy"
+reviews: (3) [{
+comment: "Very satisfied!"
+date: "2024-05-23T08:56:21.620Z"
+rating: 4
+reviewerEmail: "leo.rivera@x.dummyjson.com"
+reviewerName: "Leo Rivera"
+}, {
+comment: "Very satisfied!"
+date: "2024-05-23T08:56:21.620Z"
+rating: 3
+reviewerEmail: "rivera@x.dummyjson.com"
+reviewerName: "Rivera"
+}, {
+comment: "V!"
+date: "2024-05-23T08:56:21.620Z"
+rating: 5
+reviewerEmail: "leo@x.dummyjson.com"
+reviewerName: "Leo"
+}}]
+
+shippingInformation: "Ships in 1-2 business days"
+
+title: "Juice"
+warrantyInformation: "1 week warranty"
+weight: 2
+
+*/
+
+/*
+
+                    <p class="price">
+                        <strong>
+                            Price: 
+                        </strong>
+                        ${product.price}
+                    </p>
+                    <p class="rating">
+                        <strong>
+                            Rating: 
+                        </strong>
+                        ${product.rating}
+                    </p>
+                    <p class="stock">
+                        <strong>
+                            Stock: 
+                        </strong>
+                            ${product.stock}
+                    </p>
+                    <p>
+                        <strong>
+                            Return Policy: 
+                        </strong>
+                        ${product.returnPolicy}
+                    </p>
+                    <p>
+                        <strong>
+                            Shipping Information: 
+                        </strong>
+                        ${product.shippingInformation}
+                    </p>
+                    <p>
+                        <strong>
+                            Warranty Information: 
+                        </strong>
+                        ${product.warrantyInformation}
+                    </p>
+                    <p>
+                        <strong>
+                            Weight: 
+                        </strong>
+                        ${product.weight}kg
+                    </p>
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
