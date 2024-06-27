@@ -5,7 +5,7 @@
 ===========================================================
 - 3- categories
 **/
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("load", function () {
     // Fetch and display all products initially
     fetchAllProducts();
 
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
 ===========================================================
 - -3-1 => categories navigation 
 **/
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("load", function () {
     let prodCont = [...document.querySelectorAll("#categories")];
     let nexBtn = [...document.querySelectorAll(".nav-categories .next-btn")];
     let preBtn = [...document.querySelectorAll(".nav-categories .pre-btn")];
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 - -3. Search Functionality
 **/
 let searchDiv = document.querySelector("#searchDiv");
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("load", function () {
     const searchInput = document.createElement("input");
     searchInput.setAttribute("type", "text");
     searchInput.setAttribute("id", "search");
@@ -287,7 +287,7 @@ function calculateTotal() {
 }
 
 // let shops = document.querySelector("#shops");
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("load", function () {
     let viewCart = document.querySelector(".header .header-action-btn.view");
     viewCart.addEventListener("click", displayCart);
 
@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function () {
 ===========================================================
 - -icon login =>
 **/
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("load", function () {
     const user = JSON.parse(localStorage.getItem("user"));
     // console.log(`1-->`, user);
     if (user) {

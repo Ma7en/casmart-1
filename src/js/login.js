@@ -16,7 +16,7 @@
 
 // =========================================
 // =========================================
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("load", () => {
     const user = JSON.parse(localStorage.getItem("user"));
 
     if (user) {
