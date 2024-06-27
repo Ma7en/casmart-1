@@ -91,7 +91,7 @@ window.addEventListener("load", function () {
 
 
                 <div class="card-actions">
-                    <a href="product.html?id=${product.id}"
+                    <a href="./product.html?id=${product.id}"
                         class="card-action-btn"
                         aria-label="Quick view"
                     >
