@@ -1,11 +1,12 @@
-"use strict";
+// "use strict";
 
-/**
+document.addEventListener("DOMContentLoaded", function () {
+    /**
 ===========================================================
 ===========================================================
 - 1- categories
 **/
-document.addEventListener("DOMContentLoaded", function () {
+
     // Fetch and display all products initially
     fetchAllProducts();
 
@@ -132,14 +133,12 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
         });
     }
-    // });
 
     /**
 ===========================================================
 ===========================================================
 - -3-1 => categories navigation 
 **/
-    // document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         let prodCont = [...document.querySelectorAll("#categories")];
         let nexBtn = [
@@ -171,14 +170,12 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }, 1000);
-    // });
 
     /**
 ===========================================================
 ===========================================================
 - -3. Search Functionality
 **/
-    // document.addEventListener("DOMContentLoaded", function () {
     let searchDiv = document.querySelector("#searchDiv");
 
     const searchInput = document.createElement("input");
@@ -200,7 +197,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-    // });
 
     /**
 ===========================================================
@@ -307,7 +303,6 @@ document.addEventListener("DOMContentLoaded", function () {
 ===========================================================
 - -4. view card
 **/
-    // document.addEventListener("DOMContentLoaded", function () {
     let viewCart = document.querySelector(".header .header-action-btn.view");
     viewCart.addEventListener("click", displayCart);
 
@@ -320,14 +315,12 @@ document.addEventListener("DOMContentLoaded", function () {
     closeCart.addEventListener("click", function () {
         modelCart.classList.remove("active");
     });
-    // });
 
     /**
 ===========================================================
 ===========================================================
 - -icon login =>
 **/
-    // document.addEventListener("DOMContentLoaded", function () {
     const user = JSON.parse(localStorage.getItem("user"));
     // console.log(`1-->`, user);
     if (user) {
