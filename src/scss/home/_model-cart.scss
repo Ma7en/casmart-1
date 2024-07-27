@@ -1,0 +1,108 @@
+/*-----------------------------------*\
+ * #model-cart
+\*-----------------------------------*/
+.model-cart {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition-1);
+    z-index: 100;
+    padding: 20px;
+
+    &.active {
+        display: block;
+        overflow-y: scroll;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--black);
+        opacity: 0.7;
+    }
+
+    .container {
+        /* overflow-y: scroll; */
+        position: relative;
+        /* left: 0;
+        top: 50%;
+        transform: translateY(-50%); */
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 20px;
+        z-index: 101;
+        border: 1px solid #ddd;
+        /* border-radius: 10px; */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                text-transform: capitalize;
+            }
+        }
+
+        .list-products {
+            /* overflow: scroll; */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* align-items: center; */
+
+            .cart-item {
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                gap: 10px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+
+                .image {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+
+                .content {
+                    flex-basis: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    strong {
+                        text-transform: capitalize;
+                    }
+
+                    button {
+                        color: var(--candy-pink);
+                    }
+                }
+            }
+        }
+
+        #total {
+            font-size: 20px;
+            color: var(--ocean-green);
+        }
+    }
+}

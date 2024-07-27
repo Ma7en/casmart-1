@@ -17,7 +17,8 @@
 
 window.addEventListener("load", function () {
     const user = JSON.parse(localStorage.getItem("user"));
-    console.log(`1-->`, user);
+    // console.log(`1-->`, user);
+
     if (user) {
         let profile = document.getElementById("profile-content");
         profile.innerHTML += `
@@ -66,7 +67,7 @@ window.addEventListener("load", function () {
         let signLabel = document.querySelector(
             ".header .sign .header-action-label"
         );
-        console.log(`-->>`, signLabel);
+        // console.log(`-->>`, signLabel);
         signLabel.textContent = "Logout";
         signE.addEventListener("click", logout);
 

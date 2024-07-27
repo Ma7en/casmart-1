@@ -1,42 +1,29 @@
-#Casmart
+# Casmart
 
--
+-   Mazen Saad
+-   JavaScript - Parcel
 
-Main project mazen saad
-JavaScript - Parcel
+# GitHub Commands :-
 
-## <!-- upload files to github -->
+    - git init
+    - git add -A
+    - git commit -m "Initial commit"
+    - git branch -M main
+    - git remote add origin git@github.com:Ma7en/casmart-1.git
+    - git push -u origin main
 
-git init
+# Commands Upload files to firebase :-
 
-git status
+    - npm install -g firebase-tools
 
-git add -A
+    - firebase login
 
-git status
+    - firebase init
 
-git commit -m "Initial commit"
+    - firebase deploy
 
-git branch -M main
+# Links :-
 
-git remote add origin git@github.com:Ma7en/casmart-1.git
-
-git push -u origin main
-
-## <!-- upload files to firebase -->
-
-npm install -g firebase-tools
-
-firebase login
-
-firebase init
-
-firebase deploy
-
-## <!-- link repo -->
-
-https://github.com/Ma7en/casmart-1
-https://casmart-1.netlify.app
-https://casmart-1.vercel.app/
-
-## <!-- link repo -->
+-   https://github.com/Ma7en/casmart-1
+-   https://casmart-1.netlify.app
+-   https://casmart-1.vercel.app/

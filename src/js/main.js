@@ -3,9 +3,9 @@
 /**
 ===========================================================
 ===========================================================
-- 3- categories
+- 1- categories
 **/
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     // Fetch and display all products initially
     fetchAllProducts();
 
@@ -15,7 +15,8 @@ window.addEventListener("load", function () {
             return response.json();
         })
         .then((categories) => {
-            console.log(`Categories: `, categories);
+            // console.log(`Categories: `, categories);
+
             let categoriesContainer = document.getElementById("categories");
             for (let i = 0; i < categories.length; i++) {
                 let listItem = document.createElement("li");
@@ -29,7 +30,7 @@ window.addEventListener("load", function () {
                         allListItems[j].classList.remove("active");
                     }
 
-                    console.log(`90-->`, listItem);
+                    // console.log(`90-->`, listItem);
                     listItem.classList.add("active");
                 });
                 categoriesContainer.appendChild(listItem);
@@ -52,7 +53,7 @@ window.addEventListener("load", function () {
                 return response.json();
             })
             .then((data) => {
-                console.log(`All products: `, data);
+                // console.log(`All products: `, data);
                 displayProducts(data.products);
             });
     }
@@ -64,7 +65,7 @@ window.addEventListener("load", function () {
                 return response.json();
             })
             .then((data) => {
-                console.log(`Products in category ${category}: `, data);
+                // console.log(`Products in category ${category}: `, data);
                 displayProducts(data.products);
             });
     }
@@ -75,99 +76,111 @@ window.addEventListener("load", function () {
         productContainer.innerHTML = ""; // Clear previous products
         products.forEach((product) => {
             productContainer.innerHTML += `
-    <li class="product-card">
-        <div >
-            <figure class="card-banner">
-                <a>
-                    <img
-                        src="${product.images[0]}"
-                        alt="${product.title}"
-                        loading="lazy"
-                        width="800"
-                        height="1034"
-                        class="w-100"
-                    />
-                </a>
+                <li class="product-card">
+                    <div>
+                        <figure class="card-banner">
+                            <a>
+                                <img
+                                    src="${product.images[0]}"
+                                    alt="${product.title}"
+                                    loading="lazy"
+                                    width="800"
+                                    height="1034"
+                                    class="w-100"
+                                />
+                            </a>
 
+                            <div class="card-actions">
+                                <a href="product.html?id=${product.id}"
+                                    class="card-action-btn"
+                                    aria-label="Quick view"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 0 0-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 0 0 0-17.47C428.89 172.28 347.8 112 255.66 112" />
+                                        <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                                    </svg>
+                                </a>
 
-                <div class="card-actions">
-                    <a href="./product.html?id=${product.id}"
-                        class="card-action-btn"
-                        aria-label="Quick view"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 0 0-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 0 0 0-17.47C428.89 172.28 347.8 112 255.66 112" />
-                            <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
-                        </svg>
-                    </a>
+                                <button
+                                    class="card-action-btn cart-btn"
+                                    onclick="addToCart(${product.id})"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M80 176a16 16 0 0 0-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 0 0-16-16Zm80 0v-32a96 96 0 0 1 96-96h0a96 96 0 0 1 96 96v32" />
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 224v16a96 96 0 0 0 96 96h0a96 96 0 0 0 96-96v-16" />
+                                    </svg>
 
-                    <button
-                        class="card-action-btn cart-btn"
-                        onclick="addToCart(${product.id})"
-                    >
-                       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M80 176a16 16 0 0 0-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 0 0-16-16Zm80 0v-32a96 96 0 0 1 96-96h0a96 96 0 0 1 96 96v32" />
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 224v16a96 96 0 0 0 96 96h0a96 96 0 0 0 96-96v-16" />
-                        </svg>
+                                    <span>Add to Cart</span>
+                                </button>
 
-                        <p>Add to Cart</p>
-                    </button>
+                            </div>
+                        </figure>
 
+                        <div class="card-content">
+                            <h2 class="h4 card-title">
+                                <a>${product.title}</a>
+                            </h2>
 
-                </div>
-            </figure>
-
-            <div class="card-content">
-                <h2 class="h4 card-title">
-                    <a>${product.title}</a>
-                </h2>
-
-                <div class="card-price">
-                    <data value="${product.price}"
-                        >&pound;${product.price}</data
-                    >
-                </div>
-            </div>
-        </div>
-    </li>
+                            <div class="card-price">
+                                <data value="${product.price}">
+                                    &pound;${product.price}
+                                </data>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             `;
         });
     }
+});
 
-    /**
+/**
 ===========================================================
 ===========================================================
 - -3-1 => categories navigation 
 **/
-    // window.addEventListener("load", function () {
-    let prodCont = [...document.querySelectorAll("#categories")];
-    let nexBtn = [...document.querySelectorAll(".nav-categories .next-btn")];
-    let preBtn = [...document.querySelectorAll(".nav-categories .pre-btn")];
-    // console.log(`1--> `, prodCont, "2-->", nexBtn, "3-->", preBtn);
+window.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        let prodCont = [...document.querySelectorAll("#categories")];
+        let nexBtn = [
+            ...document.querySelectorAll(".nav-categories .next-btn"),
+        ];
+        let preBtn = [...document.querySelectorAll(".nav-categories .pre-btn")];
+        // console.log(`1--> `, prodCont);
+        // console.log("2-->", nexBtn);
+        // console.log("3-->", preBtn);
 
-    prodCont.forEach((item, i) => {
-        let containerDimesions = item.getBoundingClientRect();
-        let containerWidth = containerDimesions.width;
-        // console.log(`5->`, containerDimesions);
-        // console.log(`6->`, containerWidth);
+        prodCont.forEach((item, i) => {
+            // console.log(`4-->`, item);
+            // console.log(`4-->`, i);
+            let containerDimesions = item.getBoundingClientRect();
+            let containerWidth = containerDimesions.width;
+            // console.log(`5->`, containerDimesions);
+            // console.log(`6->`, containerWidth);
 
-        nexBtn[i].addEventListener("click", () => {
-            item.scrollLeft += containerWidth;
+            nexBtn[i].addEventListener("click", () => {
+                item.scrollLeft += containerWidth;
+                // console.log(`7`, item.scrollLeft);
+                // console.log(`->-> 1`);
+                // console.log(`---->`, containerWidth);
+            });
+
+            preBtn[i].addEventListener("click", () => {
+                item.scrollLeft -= containerWidth;
+                // console.log(`->-> 2`);
+            });
         });
+    }, 1000);
+});
 
-        preBtn[i].addEventListener("click", () => {
-            item.scrollLeft -= containerWidth;
-        });
-    });
-    // });
-
-    /**
+/**
 ===========================================================
 ===========================================================
 - -3. Search Functionality
 **/
+window.addEventListener("DOMContentLoaded", function () {
     let searchDiv = document.querySelector("#searchDiv");
-    // window.addEventListener("load", function () {
+
     const searchInput = document.createElement("input");
     searchInput.setAttribute("type", "text");
     searchInput.setAttribute("id", "search");
@@ -187,54 +200,54 @@ window.addEventListener("load", function () {
             }
         });
     });
-    // });
+});
 
-    /**
+/**
 ===========================================================
 ===========================================================
 - -4. Shopping Cart
 **/
-    let cart = [];
-    let modelCart = document.querySelector(".model-cart");
 
-    function updateCartNumber() {
-        let numberCart = document.querySelector(
-            ".header .header-action-btn.view .btn-badge"
-        );
-        numberCart.textContent = cart.length;
-    }
+let cart = [];
+let modelCart = document.querySelector(".model-cart");
 
-    function addToCart(productId) {
-        fetch(`https://dummyjson.com/products/${productId}`)
-            .then((response) => response.json())
-            .then((product) => {
-                // Check if the product is already in the cart
-                let cartItem = cart.find((item) => item.id === productId);
-                if (cartItem) {
-                    // If the product is already in the cart, increase its quantity
-                    cartItem.quantity++;
-                    updateCartNumber();
-                } else {
-                    // If the product is not in the cart, add it with quantity 1
-                    product.quantity = 1;
-                    cart.push(product);
-                    updateCartNumber();
-                }
-                console.log("120-->>", cart);
-                // displayCart();
-            });
-    }
+function updateCartNumber() {
+    let numberCart = document.querySelector(
+        ".header .header-action-btn.view .btn-badge"
+    );
+    numberCart.textContent = cart.length;
+}
 
-    function displayCart() {
-        modelCart.classList.add("active");
+function addToCart(productId) {
+    // console.log(`pro-----> `, productId);
+    fetch(`https://dummyjson.com/products/${productId}`)
+        .then((response) => response.json())
+        .then((product) => {
+            // Check if the product is already in the cart
+            let cartItem = cart.find((item) => item.id === productId);
+            if (cartItem) {
+                // If the product is already in the cart, increase its quantity
+                cartItem.quantity++;
+                updateCartNumber();
+            } else {
+                // If the product is not in the cart, add it with quantity 1
+                product.quantity = 1;
+                cart.push(product);
+                updateCartNumber();
+            }
+            // console.log("120-->>", cart);
+            // displayCart();
+        });
+}
 
-        let cartContainer = document.querySelector(
-            ".model-cart #list-products"
-        );
-        cartContainer.innerHTML = "";
-        cart.forEach((product) => {
-            console.log(`156-->`, product);
-            cartContainer.innerHTML += `
+function displayCart() {
+    modelCart.classList.add("active");
+
+    let cartContainer = document.querySelector(".model-cart #list-products");
+    cartContainer.innerHTML = "";
+    cart.forEach((product) => {
+        // console.log(`156-->`, product);
+        cartContainer.innerHTML += `
             <div class="cart-item">
                 <div class="image">
                     <img src="${product.images[0]}" alt="${product.title}">
@@ -260,35 +273,39 @@ window.addEventListener("load", function () {
                 </div>
             </div>
         `;
-        });
-        calculateTotal();
-    }
+    });
+    calculateTotal();
+}
 
-    function removeFromCart(productId) {
-        let cartItem = cart.find((item) => item.id === productId);
-        if (cartItem.quantity > 1) {
-            // If there's more than one item, decrease the quantity
-            cartItem.quantity--;
-            updateCartNumber();
-        } else {
-            // If there's only one item, remove it from the cart
-            cart = cart.filter((item) => item.id !== productId);
-            updateCartNumber();
-        }
-        displayCart();
+function removeFromCart(productId) {
+    let cartItem = cart.find((item) => item.id === productId);
+    if (cartItem.quantity > 1) {
+        // If there's more than one item, decrease the quantity
+        cartItem.quantity--;
+        updateCartNumber();
+    } else {
+        // If there's only one item, remove it from the cart
+        cart = cart.filter((item) => item.id !== productId);
+        updateCartNumber();
     }
+    displayCart();
+}
 
-    function calculateTotal() {
-        let total = cart.reduce(
-            (acc, product) => acc + product.price * product.quantity,
-            0
-        );
-        let totalEl = document.querySelector(".model-cart #total");
-        totalEl.textContent = `Total: £${total.toFixed(2)}`;
-    }
+function calculateTotal() {
+    let total = cart.reduce(
+        (acc, product) => acc + product.price * product.quantity,
+        0
+    );
+    let totalEl = document.querySelector(".model-cart #total");
+    totalEl.textContent = `Total: £${total.toFixed(2)}`;
+}
 
-    // let shops = document.querySelector("#shops");
-    // window.addEventListener("load", function () {
+/**
+===========================================================
+===========================================================
+- -4. view card
+**/
+window.addEventListener("DOMContentLoaded", function () {
     let viewCart = document.querySelector(".header .header-action-btn.view");
     viewCart.addEventListener("click", displayCart);
 
@@ -301,14 +318,14 @@ window.addEventListener("load", function () {
     closeCart.addEventListener("click", function () {
         modelCart.classList.remove("active");
     });
-    // });
+});
 
-    /**
+/**
 ===========================================================
 ===========================================================
 - -icon login =>
 **/
-    // window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     const user = JSON.parse(localStorage.getItem("user"));
     // console.log(`1-->`, user);
     if (user) {
@@ -322,5 +339,4 @@ window.addEventListener("load", function () {
         signLabel.textContent = "Profile";
         signLabel.addEventListener("click", profile);
     }
-    // });
 });

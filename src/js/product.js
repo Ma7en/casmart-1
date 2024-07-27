@@ -20,7 +20,7 @@ window.addEventListener("load", function () {
                 return response.json();
             })
             .then((data) => {
-                console.log(`All products: `, data);
+                // console.log(`All products: `, data);
                 displayProductDetails(data);
             })
             .catch((error) => {
@@ -149,7 +149,7 @@ window.addEventListener("load", function () {
                         (review) => `
                     <div class="review">
                         <div>
-                            <img src="./images/product/avter-1.png" alt="${
+                            <img src="./images/header/avter-1.png" alt="${
                                 review.reviewerName
                             }">
                             <p>

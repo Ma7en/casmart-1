@@ -1,0 +1,83 @@
+/*-----------------------------------*\
+ * #profile
+\*-----------------------------------*/
+.profile {
+    margin-top: 100px;
+
+    #profile-content {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: start;
+        width: 100%;
+        /* max-width: 500px; */
+        margin: 50px auto;
+
+        .profile-image {
+            border-radius: 50%;
+            width: 100%;
+            max-width: 128px;
+            height: 128px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+        }
+
+        strong {
+            text-transform: capitalize;
+            color: #333;
+        }
+
+        #password {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #logout {
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: var(--candy-pink);
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 18px;
+            transition: var(--main-transition) ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* display: inline-block; */
+            /* position: relative; */
+            /* left: 50%; */
+            /* transform: translateX(-50%); */
+        }
+    }
+}

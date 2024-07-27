@@ -1,0 +1,68 @@
+/*-----------------------------------*\
+ * #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon,
+svg {
+    display: block;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+button {
+    text-align: left;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    outline-color: var(--middle-blue-green);
+}
+
+img {
+    height: auto;
+}
+
+/* ion-icon {
+    pointer-events: none;
+} */
+svg {
+    pointer-events: none;
+}
+
+html {
+    font-family: var(--ff-jost);
+    color: var(--sonic-silver);
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--white);
+    padding-block: 70px;
+}
