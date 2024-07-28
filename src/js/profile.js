@@ -15,7 +15,8 @@
 
 // ===================================================
 
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
+    console.log(`1-1>`, 1);
     const user = JSON.parse(localStorage.getItem("user"));
     // console.log(`1-->`, user);
 
